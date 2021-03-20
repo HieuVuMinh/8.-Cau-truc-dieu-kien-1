@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leapyear</title>
+</head>
+<body>
+
+<input type="number" id="1" onkeypress="abc(event)">
+<input type="text" id="2">
+<script>
+    function abc(e) {
+        var leapYear = document.getElementById('1').value;
+        if (e.keyCode == 13) {
+
+            if (leapYear % 4 == 0) {
+                if (leapYear % 100 == 0) {
+                    if (leapYear % 400 == 0) {
+                        document.getElementById('2').value = 'day la nam nhuan';
+                    } else {
+                        document.getElementById('2').value = 'day khong la nam nhuan';
+                    }
+                } else {
+                    document.getElementById('2').value = 'day la nam nhuan';
+                }
+            } else {
+                document.getElementById('2').value = 'day khong la nam nhuan';
+            }
+        }
+    }
+
+
+    // if(value%4==0){
+    //     if(value%100==0){
+    //         if(value%400==0){
+    //             alert('Day la nam nhuan')
+    //         } else{
+    //             alert('Day khong phai nam nhuan')
+    //         }
+    //     } else{
+    //         alert('Day la nam nhuan')
+    //     }
+    // } else{
+    //     alert('Day khong phai nam nhuan')
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành] Luyện tập với cấu trúc if/else</title>
+</head>
+<body>
+    <input type="text" id="1" style="width: 300px" placeholder="What is the official of JavaScript ?" onkeypress="abc(event)">
+    <script>
+        function abc(e) {
+            var what = document.getElementById('1').value
+            if(e.keyCode == 13){
+                if(what == "ECMAScript"){
+                    alert("Right")
+                } else{
+                    alert("Didn't you know? ECMAScript!")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
